@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neymar Jr - O Craque</title>
+    <style>
+        /* Resetando as margens e o padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo e fundo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #3b5998;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        section h2 {
+            color: #3b5998;
+            font-size: 1.8em;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        button:hover {
+            background-color: #2d4373;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+
+        #informacao-extra {
+            margin-top: 15px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAe</p>
+    <header>
+        <h1>Neymar Jr - O Craque Brasileiro</h1>
+        <p>Conheça a história do nosso ídolo do futebol!</p>
+    </header>
+
+    <section id="bio">
+        <h2>Biografia</h2>
+        <p>Nasceu em Mogi das Cruzes, São Paulo, em 5 de fevereiro de 1992. Neymar Jr começou sua carreira no Santos FC, passando a brilhar no futebol brasileiro e internacional.</p>
+        <button id="mostrar-info">Saiba mais sobre Neymar</button>
+        <p id="informacao-extra" style="display:none;">Neymar é reconhecido por sua habilidade, velocidade e dribles espetaculares. Ele tem uma carreira internacional recheada de títulos e atua com destaque na Seleção Brasileira e em clubes como o Barcelona e o PSG.</p>
+    </section>
+
+    <section id="carreira">
+        <h2>Carreira Profissional</h2>
+        <ul>
+            <li>Santos FC (2009 - 2013)</li>
+            <li>Barcelona (2013 - 2017)</li>
+            <li>Paris Saint-Germain (2017 - Presente)</li>
+        </ul>
+    </section>
+
+    <section id="conquistas">
+        <h2>Principais Conquistas</h2>
+        <ul>
+            <li>Campeão da Liga dos Campeões da UEFA</li>
+            <li>Campeão da Copa Libertadores</li>
+            <li>Campeão da Copa América</li>
+            <li>Medalha de Ouro nas Olimpíadas de 2016</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Neymar Jr. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para mostrar a informação extra sobre Neymar
+        document.getElementById('mostrar-info').addEventListener('click', function() {
+            const info = document.getElementById('informacao-extra');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
+
